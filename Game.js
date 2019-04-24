@@ -7,7 +7,7 @@ for (car i = 0; i< squares.length; i++){
   squares[i].textContent ='';
 }
 }
-restart.addEventListener('click.clearBoard')
+restart.addEventListener('click'.clearBoard)
 
 function changeMarker(){
   if (this.textContent === ''){
