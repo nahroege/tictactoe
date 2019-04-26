@@ -1,24 +1,21 @@
-var restart =document.querySelector('#b');
-var squares= document.querySelectorAll('td');
+var squares = document.querySelectorAll('td');
 
+document.getElementById("b").addEventListener("click", function () {
+  for (var i = 0; i < squares.length; i++) {
+    squares[i].textContent = '';
+  }
+});
 
-function clearBoard() {
-for (car i = 0; i< squares.length; i++){
-  squares[i].textContent ='';
-}
-}
-restart.addEventListener('click'.clearBoard)
-
-function changeMarker(){
-  if (this.textContent === ''){
-    this.textContent='X';
-  }else if (this.textContent === 'X') {
+function changeMarker() {
+  if (this.textContent === '') {
+    this.textContent = 'X';
+  } else if (this.textContent === 'X') {
     this.textContent = 'O';
-  }else {
+  } else {
     this.textContent = '';
   }
-  }
 }
+
 for (var i = 0; i < squares.length; i++) {
-    squares[i].addEventListener('click', changeMarker);
+  squares[i].addEventListener('click', changeMarker);
 }
