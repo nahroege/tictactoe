@@ -5,9 +5,10 @@
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="GameCSS.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
 
-  <body style="background-color:DodgerBlue;">
+  <body>
     <div class="container">
 
 
@@ -36,8 +37,28 @@
     </table>
 
 
-   <script type="text/javascript" src='Game.js'></script>
+   <script type="text/javascript" src='Game.js'>
+</script>
+<script type="text/javascript">
+  audio = new Audio();
+
+  audio.src = "ac.mp3";
+
+  audio.loop = true;
+
+  audio.play();
+
+  function play() {
+    audio.play();
+  }
+
+  function pause() {
+    audio.pause();
+  }
+</script>
    </div>
+   &#160;&#160;&#160;<button type="btn6" onclick="play()" class="btn btn-dark"> başlat </button>&#160;&#160;&#160;
+  &#160;&#160;&#160;<button type="btn7" onclick="pause()" class="btn btn-light"> durdur </button>&#160;&#160;&#160;
   </body>
 
 </html>
